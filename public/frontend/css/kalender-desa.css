@@ -1,0 +1,60 @@
+#calendar .calendar-container {
+  padding: 40px;
+  margin: 40px;
+}
+
+#calendar .calendar-container .title {
+  color: #304529;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* CSS untuk responsivitas dan overflow */
+#calendar-box {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.fc-view-container {
+  min-width: 800px; /* Atur lebar minimum kalender untuk scroll horizontal */
+}
+
+/* Media queries untuk tampilan layar kecil */
+@media (max-width: 1100px) {
+  #calendar .calendar-container .title {
+    font-size: 24px;
+  }
+
+  #calendar .calendar-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fc-toolbar {
+    flex-direction: column;
+  }
+
+  .fc-left,
+  .fc-center,
+  .fc-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .fc-right {
+    order: 1; /* Pindahkan tombol navigasi ke atas pada layar kecil */
+  }
+
+  .fc-center {
+    order: 2;
+  }
+
+  .fc-left {
+    order: 3; /* Pindahkan tombol navigasi ke bawah pada layar kecil */
+  }
+}

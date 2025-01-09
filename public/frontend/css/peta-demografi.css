@@ -1,0 +1,51 @@
+#peta,
+#demografi {
+  padding: 20px 40px 40px 40px;
+  margin: 40px;
+}
+
+#peta .title,
+#demografi .title {
+  color: #304529;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#demografi .demografi-container {
+  display: flex;
+  gap: 30px;
+}
+
+#demografi .demografi-container .demografi-image {
+  width: 70%;
+  background-color: #304529;
+}
+
+#demografi .demografi-container .demografi-image img {
+  object-fit: contain;
+}
+
+#demografi .demografi-container .demografi-text {
+  width: 30%;
+}
+
+#demografi .demografi-container .demografi-text .content {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+#demografi .demografi-container .demografi-text .content,
+#demografi .demografi-container .demografi-text ul li {
+  font-size: 14px;
+}
+
+#peta .download-container {
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#peta .download-container a {
+  width: 50%;
+  display: inline-block;
+  justify-content: center;
+}

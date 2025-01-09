@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  /* height: 2000px; */
+}
+
+/* NAVIGATION */
+.nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #dedede;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 10px 40px;
+}
+
+.navbar-brand div {
+  margin-left: 10px;
+}
+
+.navbar-brand div h1 {
+  font-size: 16px;
+}
+
+.navbar-brand div h2 {
+  font-size: 14px;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #304529;
+}
+
+#footer .contact {
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .navbar-brand div h1 {
+    font-size: 12px;
+  }
+
+  .navbar-brand div h2 {
+    font-size: 10px;
+    padding-top: 2px;
+  }
+
+  .navbar-toggler {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar .navbar-collapse ul li a {
+    font-size: 12px;
+  }
+}

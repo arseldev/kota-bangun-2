@@ -1,263 +1,240 @@
-* {
-  /* border: 1px solid black; */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins";
-  /* height: 2000px; */
-}
-
-/* NAVIGATION */
-.nav-item .dropdown-menu .dropdown-item:hover {
-  background-color: #dedede;
-  font-weight: bold;
-}
-
-.navbar {
-  padding: 10px 40px;
-}
-
-.navbar-brand div {
-  margin-left: 10px;
-}
-
-.navbar-brand div h1 {
-  font-size: 16px;
-}
-
-.navbar-brand div h2 {
-  font-size: 14px;
-}
-
 /* HERO */
 .hero {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  background: url("/frontend/img/desa.jpg") center center/cover no-repeat;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url("/frontend/img/koba2.jpg") center center/cover no-repeat;
 }
 
 .hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  /* Efek overlay hitam dengan transparansi */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Efek overlay hitam dengan transparansi */
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 1;
-  white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    white-space: nowrap;
 }
 
 .hero-content h4 {
-  font-size: 16px;
-  font-weight: normal;
+    margin-bottom: -1px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .hero-content h3 {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 /* ABOUT */
 #about {
-  padding: 0 40px;
-  color: #353535;
+    padding: 0 40px;
+    color: #353535;
 }
 
 #about {
-  font-size: 14px;
-  gap: 30px;
+    font-size: 14px;
+    gap: 30px;
 }
 
 #about h5 {
-  font-size: 32px;
+    font-size: 32px;
 }
 
 #about p {
-  text-align: justify;
+    text-align: justify;
 }
 
 #about .box {
-  width: 100%;
-  height: 300px;
-  gap: 30px;
+    width: 100%;
+    height: 300px;
+    gap: 30px;
 }
 
 #about .description,
 #about .description-box {
-  width: 50%;
+    width: 50%;
 }
 
 #about .box div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 #about .box div span {
-  display: block;
-  width: 100%;
-  height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 #about .box .box-left1 {
-  background: url("/frontend/img/desa2.jpg") center center/cover no-repeat;
+    background: url("/frontend/img/desa2.webp") center center/cover no-repeat;
 }
 
 #about .box .box-left2 {
-  background: url("/frontend/img/desa.jpg") center center/cover no-repeat;
+    background: url("/frontend/img/kebun.webp") center center/cover no-repeat;
 }
 
 #about .box .box-right1 {
-  background: url("/frontend/img/desa.jpg") center center/cover no-repeat;
+    background: url("/frontend/img/menanam_padi.webp") center center/cover
+        no-repeat;
 }
 
 #about .box .box-right2 {
-  background: url("/frontend/img/desa2.jpg") center center/cover no-repeat;
+    background: url("/frontend/img/desa.webp") center center/cover no-repeat;
 }
 
 #about .box .left {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 #about .box .right {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /* STATS */
 #stats {
-  position: relative;
-  width: 100%;
-  background: url("/frontend/img/desa2.jpg") center center/cover no-repeat;
-  background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    background: url("/frontend/img/desa2.webp") center center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 #stats::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(48, 69, 41, 0.95);
-  /* Efek overlay hitam dengan transparansi */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 69, 41, 0.95);
+    /* Efek overlay hitam dengan transparansi */
 }
 
 #stats .content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 40px;
-  text-align: center;
-  height: 100%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    height: 100%;
 }
 
 #stats .content .d-flex {
-  align-items: center;
-  height: 100%;
+    align-items: center;
+    height: 100%;
 }
 
 #stats .d-flex div {
-  flex: 1;
+    flex: 1;
 }
 
 #stats div .amount {
-  font-size: 50px;
-  margin-bottom: -10px;
+    font-size: 50px;
+    margin-bottom: -10px;
 }
 
 /* VISI MISI */
 #visi-misi {
-  padding: 40px;
-  gap: 30px;
-  color: #353535;
+    padding: 40px;
+    gap: 30px;
+    color: #353535;
 }
 
 #visi-misi .title-container img {
-  width: 39px;
+    width: 39px;
 }
 
 #visi-misi .content-visi-misi {
-  width: 50%;
+    width: 50%;
 }
 
 #visi-misi .title-container {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #visi-misi .visi-title,
 #visi-misi .misi-title {
-  font-size: 32px;
-  display: inline-block;
-  margin-left: 10px;
+    font-size: 32px;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 #visi-misi ol li {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 #visi-misi .visi-content,
 #visi-misi .misi-content {
-  font-size: 16px;
+    font-size: 16px;
+}
+
+.misi .misi-content {
+    padding-left: 20px;
 }
 
 /* CARDS */
 #structure .cards-container {
-  padding: 0 40px;
+    padding: 0 40px;
 }
 
 #structure .cards-container .card img {
-  width: 100%;
+    width: 100%;
 }
 
-#structure .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
+#structure .title,
+#maps .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 #structure .title::before,
-.title::after {
-  content: "";
-  flex: 1;
-  border-top: 2px solid #000;
-  margin: 0 20px;
-  max-width: 150px;
+#structure .title::after,
+#maps .title::before,
+#maps .title::after {
+    content: "";
+    flex: 1;
+    border-top: 2px solid #000;
+    margin: 0 20px;
+    max-width: 150px;
 }
 
-#structure .title h4 {
-  margin: 0;
+#structure .title h4,
+#maps .title h4 {
+    margin: 0;
+}
+
+#structure .structure-box {
+    padding: 30px;
 }
 
 #structure .structure-image img {
-  width: 100%;
+    width: 100%;
 }
 
 #structure .card-text {
-  white-space: nowrap;
-  font-size: 12px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-#footer {
-  background-color: #304529;
-}
-
-#footer .contact {
-  font-size: 14px;
+#maps .maps-container {
+    margin: 20px 40px;
+    padding: 30px;
 }

@@ -1,0 +1,125 @@
+#dokumentasi {
+  padding: 20px 40px 40px 40px;
+  margin: 40px;
+}
+
+#dokumentasi .title {
+  color: #304529;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#dokumentasi-container {
+  gap: 30px;
+}
+
+.image-container,
+#monthly-doc {
+  position: relative;
+  width: 50%;
+  height: 450px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px; /* Tinggi gradient */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  border-radius: 0 0 0.25rem 0.25rem; /* Sesuaikan dengan border-radius gambar */
+}
+
+.image-container .text-overlay {
+  position: absolute;
+  bottom: 10px; /* Jarak teks dari bawah */
+  left: 20px; /* Jarak teks dari kiri */
+  color: white;
+  font-size: 1.2rem;
+  z-index: 1; /* Supaya teks berada di atas gradient */
+}
+
+#monthly-doc .monthly-title,
+#lastmonth-container .lastmonth-title {
+  color: #304529;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#monthly-doc .activity-card,
+#lastmonth-doc .activity-card {
+  padding: 10px;
+}
+
+#monthly-doc .activity-container,
+#lastmonth-doc .activity-container {
+  gap: 20px;
+}
+
+.date-text {
+  display: inline-block; /* Menjadikan elemen ini inline-block */
+  padding: 2px 10px;
+  background-color: #304529;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+#monthly-doc .activity {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px; /* Untuk menghindari overlap scroll */
+}
+
+#monthly-doc .activity-title,
+#lastmonth-doc .activity-title {
+  color: #304529;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#monthly-doc .activity {
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar Styles */
+#monthly-doc .activity::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+#monthly-doc .activity::-webkit-scrollbar-thumb {
+  background-color: #304529; /* Scrollbar thumb color */
+  border-radius: 10px; /* Scrollbar thumb rounded corners */
+}
+
+#monthly-doc .activity::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+  border-radius: 10px; /* Scrollbar track rounded corners */
+}
+
+/* Adding for Firefox */
+#monthly-doc .activity {
+  scrollbar-width: thin;
+  scrollbar-color: #304529 #f1f1f1;
+}
+
+#lastmonth-container {
+  margin-top: 50px;
+}
+
+.activity-image img {
+  width: 115px;
+  height: 115px;
+}
+
+#pagination-doc {
+  margin-top: 30px;
+}

@@ -1,0 +1,158 @@
+#hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+#hero .hero-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("/frontend/img/menanam_padi.webp") center center/cover
+    no-repeat;
+}
+
+#hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+#hero .hero-text h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.content {
+  gap: 20px;
+  margin: 40px;
+}
+
+#category,
+#potensi-desa {
+  background-color: white;
+  padding: 20px 40px;
+}
+
+#category .title,
+#potensi-desa .title {
+  font-size: 18px;
+}
+
+#category {
+  width: calc(100% / 3);
+}
+
+#potensi-desa {
+  width: calc(100% / 3 * 2);
+}
+
+#potensi-desa .potensi-desa-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#potensi-desa .potensi-desa-card {
+  position: relative;
+  flex: 1 1 calc(33.333% - 16px); /* Lebar maksimal 3 kartu, kurangi gap */
+  box-sizing: border-box;
+  margin-bottom: 16px; /* Jarak antar baris kartu */
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.25rem;
+  overflow: hidden; /* Supaya gradient tidak keluar dari card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#potensi-desa .potensi-desa-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%; /* Tinggi gradient */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+#potensi-desa .potensi-desa-card .card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  flex: 1 1 calc(33.333% - 16px);
+  z-index: 1; /* Supaya teks berada di atas gradient */
+}
+
+#potensi-desa .potensi-desa-card .card-text h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+#potensi-desa .potensi-desa-card .card-text p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#potensi-desa .potensi-desa-card .corner-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* background-color: white; */
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  z-index: 2; /* Supaya teks berada di atas gambar */
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .content {
+    margin: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  #category,
+  #potensi-desa {
+    width: 100%;
+  }
+
+  #potensi-desa .potensi-desa-card {
+    flex: 1 1 calc(50% - 16px); /* Lebar maksimal 2 kartu pada layar sedang */
+  }
+
+  #category,
+  #potensi-desa {
+    padding: 20px;
+  }
+}
+@media (max-width: 750px) {
+}
+
+@media (max-width: 650px) {
+  #category .category-button,
+  #category .category-description {
+    font-size: 12px;
+  }
+
+  #potensi-desa .potensi-desa-card {
+    flex: 1 1 100%; /* Lebar maksimal 1 kartu pada layar kecil */
+  }
+}
